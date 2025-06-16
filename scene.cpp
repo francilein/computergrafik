@@ -1,6 +1,11 @@
-class Scene {
-    public :
-    std :: vector < Object *> objects ;
-    std :: vector <Light > lights ; // Lichter kommen später
-    Camera camera ; // Die Kamera kommt später hinzu
-};
+#include "Scene.hpp"
+#include <vector>
+
+Scene::~Scene() {
+    for (auto obj : objects)
+        delete obj;
+}
+
+void Scene::addObject(Object* obj) {
+    objects.push_back(obj);
+}
