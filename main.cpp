@@ -1,3 +1,5 @@
+// Sofia war hier
+
 #include "MeshObject.hpp"
 #include "ImageWriter.hpp"
 #include "Rasterizer.hpp"
